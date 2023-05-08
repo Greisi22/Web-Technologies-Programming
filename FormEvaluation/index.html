@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="formm.js" ></script>
+</head>
+<body>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="comments">Comments:</label>
+        <textarea  id="comments" name="comments" cols="30" rows="5">Enter comments here.</textarea>
+        <br>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <h3>Things you liked:</h3>
+        <label for="site">Site design</label>
+        <input type="checkbox" id="site">
+
+        <label for="links">Links</label>
+        <input type="checkbox" id="links">
+
+        <label for="use">Ease of use</label>
+        <input type="checkbox" id="use">
+
+        <label for="img">Images</label>
+        <input type="checkbox" id="img">
+
+        <label for="src"> Source code</label>
+        <input type="checkbox" id="src">
+        <br>
+        <br>
+        <h3>How did you get to our site?</h3>
+        <label for="friend">A friend</label>
+        <input type="radio" id="friend" name="friend" value="F" >
+
+        <label for="Web">Website</label>
+        <input type="radio" id="Web" name="Web" value="W" >
+        <br>
+        <br>
+        <label for="rate">Rate our Site:</label>
+        <select name="Rate" id="rate" required>
+            <option value=" ">Please select one option</option>
+            <option value="Amazing">Amazing</option>
+            <option value="Bad">Bad</option>
+        </select>
+        <br>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+        <button id="clear" type="clear">Clear</button>
+    </form>
+
+</body>
+</html>
